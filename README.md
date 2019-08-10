@@ -3,6 +3,7 @@ Character Controller 2D contains scripts, which uses custom collision detection 
 CharacterController2D.cs can handle only basic collisions, but not slopes. PlayerController.cs takes movement and jump inputs and applies them to CC2D script. Character Controller 2D gets its inspirations from Sebastian Lague and Unity 2D platformer tutorials.
 
 # How to use it
+* Choose a game object you wish to control via scripts
 * Add Box Collider 2D component
 * Add CharacterController2D and PlayerController scripts
 * Modify public variable 'Collision Mask' in CharacterController2D, adding layers the player can collide with

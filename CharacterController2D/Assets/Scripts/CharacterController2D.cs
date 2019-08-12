@@ -52,7 +52,6 @@ public class CharacterController2D : MonoBehaviour
 
         // Box cast for collisions
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.up * directionY, rayDistance, collisionMask);
-        RaycastHit2D rayHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, -Vector2.up, rayDistance, collisionMask);
         if (hit)
         {
             ColliderDistance2D colliderDistance = hit.collider.Distance(boxCollider);

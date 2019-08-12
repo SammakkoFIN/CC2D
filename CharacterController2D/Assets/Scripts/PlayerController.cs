@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         // Move the character
         cc.Move(velocity * Time.deltaTime);
 
-        anim.SetFloat("velocityX", velocity.y);
+        anim.SetFloat("velocityX", Mathf.Abs(velocity.x));
         anim.SetFloat("velocityY", velocity.y);
         anim.SetBool("grounded", cc.contacts.below);
 
